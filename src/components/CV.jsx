@@ -1,9 +1,8 @@
 import React from "react"
-import { motion } from "framer-motion"
 
 import { styles } from "../styles"
 import { SectionWrapper } from "../hoc"
-import { fadeIn, textVariant } from "../utils/motion"
+import { textVariant } from "../utils/motion"
 import { CVDuncan, myWords } from "../constants"
 import CVDoc from "../assets/CV_AlfeusMartinus.docx"
 
