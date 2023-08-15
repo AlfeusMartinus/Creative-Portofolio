@@ -12,7 +12,7 @@ import {
   Works,
   StarsCanvas,
   Footer,
-} from "./components"
+} from "./components";
 
 const App = () => {
   return (
@@ -39,7 +39,7 @@ const App = () => {
         </div>
       </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

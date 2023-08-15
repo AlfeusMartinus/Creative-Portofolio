@@ -1,6 +1,6 @@
 import React from "react";
 
-import { logo } from "../assets"
+import { logo } from "../assets";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         {new Date().getFullYear()} &copy; Alfeus-Space. All rights reserved.
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

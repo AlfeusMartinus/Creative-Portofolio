@@ -28,11 +28,11 @@ import {
   githubb,
   linkedin,
   instagram,
-} from "../assets"
+} from "../assets";
 
-export const CVDuncan = CV_Duncan
+export const CVDuncan = CV_Duncan;
 
-export const linkGithub = "https://github.com/AlfeusMartinus"
+export const linkGithub = "https://github.com/AlfeusMartinus";
 
 export const navLinks = [
   {
@@ -56,7 +56,7 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
-]
+];
 
 const services = [
   {
@@ -75,7 +75,7 @@ const services = [
     title: "Tailwind CSS",
     icon: nextjs,
   },
-]
+];
 
 const technologies = [
   {
@@ -114,7 +114,7 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-]
+];
 
 const experiences = [
   {
@@ -126,7 +126,7 @@ const experiences = [
     points: [
       "Development commercial website of UMKM products using Elementor Framework, Wordpress, SEO, and Integration with Google Web technologies.",
     ],
-    id:1,
+    id: 1,
   },
   {
     title: "Fullstack Vanilla JS Developer",
@@ -137,24 +137,26 @@ const experiences = [
     points: [
       "Development commercial multipage education website. The site is organized into multiple pages, each containing valuable information and tools for students, educators, and anyone interested in learning.",
       "Development using HTML, CSS, Javascript (Vanilla)",
-      "SEO Performance and HTTPS Protocol Network"
+      "SEO Performance and HTTPS Protocol Network",
     ],
-    id:2,
+    id: 2,
   },
   {
-    title: "Active member of the Indonesian Christian Youth Movement (GAMKI) DPC Kota Cimahi",
+    title:
+      "Active member of the Indonesian Christian Youth Movement (GAMKI) DPC Kota Cimahi",
     company_name: "DPC GAMKI Kota Cimahi",
     icon: gamki,
     iconBg: "#E6DEDD",
     date: "2021 - Present",
     points: [
       "Held the position of External Division Staff, responsible for coordinating and communicating with external parties such as other organizations, and government agencies.",
-      "Participated in various activities and programs organized by GAMKI, such as seminars, workshops, social services, and internal activites."
+      "Participated in various activities and programs organized by GAMKI, such as seminars, workshops, social services, and internal activites.",
     ],
-    id:3,
+    id: 3,
   },
   {
-    title: "Chairman of the Youth Management Commission (KPR) GKP Jemaat Cimahi",
+    title:
+      "Chairman of the Youth Management Commission (KPR) GKP Jemaat Cimahi",
     company_name: "KPR GKPJ CIMAHI",
     icon: gkp,
     iconBg: "#E6DEDD",
@@ -163,9 +165,9 @@ const experiences = [
       "Led the youth of the Pasundan Christian Church in Cimahi city for the period 2023-2024, overseeing various aspects of their spiritual and social development.",
       "Organized and facilitated various events and activities for the youth, such as worship services, bible studies, retreats, and outreach programs.",
     ],
-    id:4,
+    id: 4,
   },
-]
+];
 
 const myWords = [
   {
@@ -175,7 +177,7 @@ const myWords = [
     company: "Universitas Pendidikan Indonesia",
     image: me,
   },
-]
+];
 
 const projects = [
   {
@@ -241,8 +243,7 @@ const projects = [
       },
     ],
     image: project3,
-    source_code_link:
-      "https://github.com/AlfeusMartinus/movie-web",
+    source_code_link: "https://github.com/AlfeusMartinus/movie-web",
     demo_link: "https://github.com/AlfeusMartinus/movie-web",
   },
   {
@@ -304,33 +305,33 @@ const projects = [
       },
     ],
     image: project6,
-    source_code_link:
-      "https://github.com/AlfeusMartinus/calculator-web",
+    source_code_link: "https://github.com/AlfeusMartinus/calculator-web",
     demo_link: "https://calculator-web-snowy.vercel.app/",
   },
-]
+];
 
 const SocialMedia = [
   {
     id: 1,
     icon: email,
-    navigate: "mailto:feusmartinus@gmail.com?subject=Hai%20Alfeus%21%20Bisakah%20Saya%20Menghubungi%20Anda%3F"
+    navigate:
+      "mailto:feusmartinus@gmail.com?subject=Hai%20Alfeus%21%20Bisakah%20Saya%20Menghubungi%20Anda%3F",
   },
   {
     id: 2,
     icon: githubb,
-    navigate: "https://github.com/AlfeusMartinus"
+    navigate: "https://github.com/AlfeusMartinus",
   },
   {
     id: 3,
     icon: linkedin,
-    navigate: "https://www.linkedin.com/in/alfeusmartinus/"
+    navigate: "https://www.linkedin.com/in/alfeusmartinus/",
   },
   {
     id: 4,
     icon: instagram,
-    navigate: "https://www.instagram.com/feusmrtns_/"
+    navigate: "https://www.instagram.com/feusmrtns_/",
   },
-]
+];
 
-export { services, technologies, experiences, myWords, projects, SocialMedia }
+export { services, technologies, experiences, myWords, projects, SocialMedia };

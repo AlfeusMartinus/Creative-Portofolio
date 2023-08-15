@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import { styles } from "../styles"
-import { SectionWrapper } from "../hoc"
-import { textVariant } from "../utils/motion"
-import { CVDuncan, myWords } from "../constants"
-import CVDoc from "../assets/CV_AlfeusMartinus.docx"
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { textVariant } from "../utils/motion";
+import { CVDuncan, myWords } from "../constants";
+import CVDoc from "../assets/CV_AlfeusMartinus.docx";
 
 const Card = ({ index, text, name, designation, company, image }) => (
   <div className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full select-none">
@@ -29,20 +29,22 @@ const Card = ({ index, text, name, designation, company, image }) => (
       </div>
     </div>
   </div>
-)
+);
 
 const CV = () => {
   return (
     <div className="bg-black-100 rounded-[20px]">
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
+        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+      >
         <div variants={textVariant()}>
           <p className={styles.sectionSubText}>For Public</p>
           <h2 className={styles.sectionHeadText}>My CV.</h2>
         </div>
       </div>
       <div
-        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center select-none`}>
+        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center select-none`}
+      >
         {myWords.map((myWords, index) => (
           <Card key={myWords.name} index={index} {...myWords} />
         ))}
@@ -60,7 +62,7 @@ const CV = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(CV, "cv")
+export default SectionWrapper(CV, "cv");

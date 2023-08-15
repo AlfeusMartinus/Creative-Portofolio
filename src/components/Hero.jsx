@@ -1,8 +1,8 @@
-import React from "react"
-import { Cursor, useTypewriter } from "react-simple-typewriter"
+import React from "react";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
-import { styles } from "../styles"
+import { styles } from "../styles";
 import { SocialMedia } from "../constants";
 
 const Hero = () => {
@@ -12,16 +12,17 @@ const Hero = () => {
       "Baca dokumentasi suka pusing",
       "Gangerti basa enggres",
       "LagiSukaSama.jsx",
-      "Ada Loker ? \"Kontak Saya\" : \"Yaudah\";",
+      'Ada Loker ? "Kontak Saya" : "Yaudah";',
     ],
     loop: true,
     delaySpeed: 2000,
-  })
+  });
 
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-5 pt-10`}>
+        className={`${styles.paddingX} h-screen max-w-7xl mx-auto flex lg:flex-row flex-col-reverse items-center justify-center gap-5 pt-10`}
+      >
         <div>
           <div className="flex gap-3 select-none">
             <div className="flex flex-col justify-center items-center mt-5">
@@ -30,7 +31,7 @@ const Hero = () => {
             </div>
 
             <div className="lg:w-[32rem]">
-              <h1 className={`${styles.heroHeadText} text-white` }>
+              <h1 className={`${styles.heroHeadText} text-white`}>
                 console.log <br /> ('
                 <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black ">
                   Alfeus Martinus
@@ -39,14 +40,15 @@ const Hero = () => {
               </h1>
 
               <p
-                className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg`}>
+                className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg`}
+              >
                 {text}
                 <Cursor cursorColor="#915eff" />
               </p>
             </div>
           </div>
 
-            {/* <a
+          {/* <a
               href="#about"
               className="w-fit mx-auto flex items-center justify-center gap-6 bg-tertiary lg:px-7 lg:py-3 px-4 py-2 rounded-xl lg:mt-10 mt-5 cursor-pointer max-[350px]:hidden select-none">
               <div className="group border-[3px] border-white rounded-full h-12 w-7 flex justify-center lg:scale-100 scale-75">
@@ -55,7 +57,6 @@ const Hero = () => {
 
               <p>Pencet Ini</p>
             </a> */}
-          
         </div>
 
         <div className="w-full">
@@ -65,7 +66,7 @@ const Hero = () => {
           <motion.div
             className="flex items-center justify-center md:gap-16 gap-8 md:m-0"
             variants={{
-              hidden: {opacity: 1, scale: 0},
+              hidden: { opacity: 1, scale: 0 },
               visible: {
                 opacity: 1,
                 scale: 1,
@@ -78,31 +79,32 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            {SocialMedia.map(({id, icon, navigate}) => (
-              <a 
+            {SocialMedia.map(({ id, icon, navigate }) => (
+              <a
                 href={navigate}
                 target="_blank"
                 key={id}
-                className={`xl:w-[90px] xl:h-[90px] md:w-24 md:h-24 w-14 h-14 cursor-pointer ${id === 2 || id === 3 ? 'md:mt-20 mt-12' : 'mt-0'}`}
+                className={`xl:w-[90px] xl:h-[90px] md:w-24 md:h-24 w-14 h-14 cursor-pointer ${
+                  id === 2 || id === 3 ? "md:mt-20 mt-12" : "mt-0"
+                }`}
               >
-                <motion.img 
+                <motion.img
                   src={icon}
-                  alt='logo'
+                  alt="logo"
                   whileHover={{ scale: 1.13, rotate: 10 }}
-                  whileTap={{ scale: 0.8, rotate: -90, borderRadius: '100%' }}
+                  whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
                   variants={{
-                    hidden: { y:20, opacity: 0 },
-                    visible: { y:0, opacity: 1 } 
-                }}
+                    hidden: { y: 20, opacity: 0 },
+                    visible: { y: 0, opacity: 1 },
+                  }}
                 />
               </a>
             ))}
           </motion.div>
         </div>
       </div>
-      
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
