@@ -1,14 +1,9 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
 
-// template_lz26pse
-// service_yxiocj3
-// 6KRW2qzkl4hzHhQwB
 
 const Contact = () => {
   const formRef = useRef();
