@@ -27,7 +27,6 @@ import {
   email,
   githubb,
   linkedin,
-  github,
   instagram,
 } from "../assets"
 
@@ -127,6 +126,7 @@ const experiences = [
     points: [
       "Development commercial website of UMKM products using Elementor Framework, Wordpress, SEO, and Integration with Google Web technologies.",
     ],
+    id:1,
   },
   {
     title: "Fullstack Vanilla JS Developer",
@@ -139,6 +139,7 @@ const experiences = [
       "Development using HTML, CSS, Javascript (Vanilla)",
       "SEO Performance and HTTPS Protocol Network"
     ],
+    id:2,
   },
   {
     title: "Active member of the Indonesian Christian Youth Movement (GAMKI) DPC Kota Cimahi",
@@ -150,6 +151,7 @@ const experiences = [
       "Held the position of External Division Staff, responsible for coordinating and communicating with external parties such as other organizations, and government agencies.",
       "Participated in various activities and programs organized by GAMKI, such as seminars, workshops, social services, and internal activites."
     ],
+    id:3,
   },
   {
     title: "Chairman of the Youth Management Commission (KPR) GKP Jemaat Cimahi",
@@ -161,6 +163,7 @@ const experiences = [
       "Led the youth of the Pasundan Christian Church in Cimahi city for the period 2023-2024, overseeing various aspects of their spiritual and social development.",
       "Organized and facilitated various events and activities for the youth, such as worship services, bible studies, retreats, and outreach programs.",
     ],
+    id:4,
   },
 ]
 
