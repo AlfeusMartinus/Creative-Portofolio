@@ -6,7 +6,7 @@ import { styles } from "../styles"
 import { SocialMedia } from "../constants";
 
 const Hero = () => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "Sok deket sama HTML & CSS",
       "Baca dokumentasi suka pusing",
