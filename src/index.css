@@ -36,7 +36,7 @@
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
+    right,
     #434343,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
@@ -66,7 +66,7 @@
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to top,
+    top,
     #f12711,
     #f5af19
   ); /* Chrome 10-25, Safari 5.1-6 */
