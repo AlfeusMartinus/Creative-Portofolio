@@ -306,7 +306,7 @@ const projects = [
     ],
     image: project6,
     source_code_link: "https://github.com/AlfeusMartinus/calculator-web",
-    demo_link: "https://calculator-web-snowy.vercel.app/",
+    demo_link: "https://lets-calculate-web.vercel.app",
   },
 ];
 
