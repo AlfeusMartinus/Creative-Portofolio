@@ -22,6 +22,7 @@ import {
   project4,
   project5,
   project6,
+  project16,
   me,
   CV_Duncan,
   email,
@@ -307,6 +308,24 @@ const projects = [
     image: project6,
     source_code_link: "https://github.com/AlfeusMartinus/calculator-web",
     demo_link: "https://lets-calculate-web.vercel.app",
+  },
+  {
+    name: "College Alfe.",
+    description:
+      "Blog Website for Attachment Work College build using CMS",
+    tags: [
+      {
+        name: "cms",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "webflow",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project16,
+    source_code_link: "https://alfeus-college-blog.webflow.io/",
+    demo_link: "https://alfeus-college-blog.webflow.io/",
   },
 ];
 
