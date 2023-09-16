@@ -11,11 +11,12 @@ import {
   nodejs,
   git,
   figma,
+  vite,
+  webflow,
   flyon,
   gamki,
   envisteam,
   gkp,
-  vite,
   project1,
   project2,
   project3,
@@ -115,6 +116,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  {
+    name: "webflow",
+    icon: webflow,
+  },
 ];
 
 const experiences = [
@@ -130,11 +135,11 @@ const experiences = [
     id: 1,
   },
   {
-    title: "Fullstack Vanilla JS Developer",
+    title: "Frontend Developer",
     company_name: "Envi-STEAM",
     icon: envisteam,
     iconBg: "#E6DEDD",
-    date: "Januari 2023 - Present",
+    date: "Januari - Agustus 2023",
     points: [
       "Development commercial multipage education website. The site is organized into multiple pages, each containing valuable information and tools for students, educators, and anyone interested in learning.",
       "Development using HTML, CSS, Javascript (Vanilla)",
