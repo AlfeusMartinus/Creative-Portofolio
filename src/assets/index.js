@@ -28,6 +28,7 @@ import threejs from "./tech/threejs.svg"
 import nextjsLogo from "./tech/nextjs.svg"
 import expo from "./tech/expo.png"
 import vite from "./tech/vite.png"
+import webflow from "./tech/webflow.png"
 
 import ilalex from "./company/ilalex.png"
 import geekbrains from "./company/geekbrains.png"
@@ -77,6 +78,7 @@ export {
   tailwind,
   threejs,
   vite,
+  webflow,
   ilalex,
   geekbrains,
   flyon,
