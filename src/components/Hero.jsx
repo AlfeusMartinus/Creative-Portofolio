@@ -8,9 +8,7 @@ import { SocialMedia } from "../constants";
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
-      "Sok deket sama HTML & CSS",
-      "Baca dokumentasi suka pusing",
-      "Gangerti basa enggres",
+      "Sok deket sama Front-end Web",
       "LagiSukaSama.jsx",
       'Ada Loker ? "Kontak Saya" : "Yaudah";',
     ],
@@ -27,13 +25,13 @@ const Hero = () => {
           <div className="flex gap-3 select-none">
             <div className="flex flex-col justify-center items-center mt-5">
               <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
-              <div className="w-1 sm:h-80 h-40 violet-gradient"></div>
+              <div className="w-2 sm:h-52 h-36 violet-gradient"></div>
             </div>
 
             <div className="lg:w-[32rem]">
-              <h1 className={`${styles.heroHeadText} text-white`}>
+              <h1 className="font-black text-white lg:text-[50px] sm:text-[60px] xs:text-[50px] text-[33px] lg:leading-[68px] mt-2">
                 console.log <br /> ('
-                <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black ">
+                <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
                   Alfeus Martinus
                 </span>
                 ');
