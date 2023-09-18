@@ -1,8 +1,8 @@
 import logo from "./logo.svg"
-import reactNative from "./reactNative.png"
-import nextjs from "./nextjs.png"
+import cpp from "./c++.png"
+import js from "./js.png"
 import react from "./react.png"
-import web from "./web.png"
+import twcss from "./tailwind.png"
 import github from "./github.png"
 import menu from "./menu.svg"
 import close from "./close.svg"
@@ -58,10 +58,10 @@ export {
   me,
   CV_Duncan,
   logo,
-  reactNative,
-  nextjs,
+  cpp,
+  js,
   react,
-  web,
+  twcss,
   github,
   menu,
   close,
