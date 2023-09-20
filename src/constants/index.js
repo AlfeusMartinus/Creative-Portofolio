@@ -1,8 +1,8 @@
 import {
   react,
-  reactNative,
-  nextjs,
-  web,
+  js,
+  twcss,
+  cpp,
   javascript,
   html,
   css,
@@ -62,8 +62,8 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "C++",
+    icon: cpp,
   },
   {
     title: "React Developer",
@@ -71,11 +71,11 @@ const services = [
   },
   {
     title: "Vannila JS",
-    icon: reactNative,
+    icon: js,
   },
   {
     title: "Tailwind CSS",
-    icon: nextjs,
+    icon: twcss,
   },
 ];
 

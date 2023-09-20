@@ -67,7 +67,7 @@ const Contact = () => {
   return (
     <>
       <div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
-        <h3 className={styles.sectionHeadText}>Contact Me 📩</h3>
+        <h3 className={styles.sectionHeadText}>Contact Me📭</h3>
 
         <form
           ref={formRef}
@@ -83,7 +83,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="Full Name"
+              placeholder=""
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -96,7 +96,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="kuncoro123@gmail.com"
+              placeholder=""
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -109,14 +109,14 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder=""
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary select-none"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary select-none hover:bg-slate-100 hover:text-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90"
           >
             {loading ? "Sending..." : "Send"}
           </button>
