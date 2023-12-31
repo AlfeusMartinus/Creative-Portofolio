@@ -13,10 +13,12 @@ import {
   figma,
   vite,
   webflow,
+  canva,
   flyon,
   gamki,
   envisteam,
   gkp,
+  gdsc,
   project1,
   project2,
   project3,
@@ -120,32 +122,38 @@ const technologies = [
     name: "webflow",
     icon: webflow,
   },
+  {
+    name: "canva",
+    icon: canva,
+  },
 ];
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "Flyon Tech - Digital Marketing Agency",
-    icon: flyon,
+    title: "Curriculum Web Developer",
+    company_name: "Google Developer Students Club - UPI",
+    icon: gdsc,
+    iconBg: "#E6DEDD",
+    date: "Oct 2023 - Present",
+    points: [
+      "Sharing about how a web page and its components work.",
+      "Learn together in a case study, namely building a web page and publishing it for public viewing.",
+      "Building portfolios and persona profiles of GDSC members via the LinkedIn platform.",
+    ],
+    id: 5,
+  },
+  {
+    title:
+      "Chairman of the Youth Management Commission (KPR) GKP Jemaat Cimahi",
+    company_name: "KPR GKPJ CIMAHI",
+    icon: gkp,
     iconBg: "#E6DEDD",
     date: "2022 - Present",
     points: [
-      "Development commercial website of UMKM products using Elementor Framework, Wordpress, SEO, and Integration with Google Web technologies.",
+      "Led the youth of the Pasundan Christian Church in Cimahi city for the period 2023-2024, overseeing various aspects of their spiritual and social development.",
+      "Organized and facilitated various events and activities for the youth, such as worship services, bible studies, retreats, and outreach programs.",
     ],
-    id: 1,
-  },
-  {
-    title: "Frontend Developer",
-    company_name: "Envi-STEAM",
-    icon: envisteam,
-    iconBg: "#E6DEDD",
-    date: "Januari - Agustus 2023",
-    points: [
-      "Development commercial multipage education website. The site is organized into multiple pages, each containing valuable information and tools for students, educators, and anyone interested in learning.",
-      "Development using HTML, CSS, Javascript (Vanilla)",
-      "SEO Performance and HTTPS Protocol Network",
-    ],
-    id: 2,
+    id: 4,
   },
   {
     title:
@@ -161,17 +169,28 @@ const experiences = [
     id: 3,
   },
   {
-    title:
-      "Chairman of the Youth Management Commission (KPR) GKP Jemaat Cimahi",
-    company_name: "KPR GKPJ CIMAHI",
-    icon: gkp,
+    title: "Frontend Developer",
+    company_name: "Envi-STEAM",
+    icon: envisteam,
     iconBg: "#E6DEDD",
-    date: "Present",
+    date: "January - August 2023",
     points: [
-      "Led the youth of the Pasundan Christian Church in Cimahi city for the period 2023-2024, overseeing various aspects of their spiritual and social development.",
-      "Organized and facilitated various events and activities for the youth, such as worship services, bible studies, retreats, and outreach programs.",
+      "Development commercial multipage education website. The site is organized into multiple pages, each containing valuable information and tools for students, educators, and anyone interested in learning.",
+      "Development using HTML, CSS, Javascript (Vanilla)",
+      "SEO Performance and HTTPS Protocol Network",
     ],
-    id: 4,
+    id: 2,
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Flyon Tech - Digital Marketing Agency",
+    icon: flyon,
+    iconBg: "#E6DEDD",
+    date: "June 2022 - September 2023",
+    points: [
+      "Development commercial website of UMKM products using Elementor Framework, Wordpress, SEO, and Integration with Google Web technologies.",
+    ],
+    id: 1,
   },
 ];
 

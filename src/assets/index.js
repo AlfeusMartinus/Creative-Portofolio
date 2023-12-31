@@ -9,6 +9,7 @@ import close from "./close.svg"
 import me from "./me.jpg"
 import CV_Duncan from "./CV_Duncan.png"
 
+
 import email from "./socmed/email.webp"
 import githubb from "./socmed/github.webp"
 import linkedin from "./socmed/linkedin.webp"
@@ -29,6 +30,7 @@ import nextjsLogo from "./tech/nextjs.svg"
 import expo from "./tech/expo.png"
 import vite from "./tech/vite.png"
 import webflow from "./tech/webflow.png"
+import canva from "./tech/canva.png"
 
 import ilalex from "./company/ilalex.png"
 import geekbrains from "./company/geekbrains.png"
@@ -36,6 +38,7 @@ import flyon from "./company/flyon.png"
 import gamki from "./company/gamki.png"
 import envisteam from "./company/envi_steam.png"
 import gkp from "./company/gkp.png"
+import gdsc from "./company/gdsc.png"
 
 import project1 from "./projects/project1.jpg"
 import project2 from "./projects/project2.jpg"
@@ -79,12 +82,14 @@ export {
   threejs,
   vite,
   webflow,
+  canva,
   ilalex,
   geekbrains,
   flyon,
   gkp,
   gamki,
   envisteam,
+  gdsc,
   project1,
   project2,
   project3,
