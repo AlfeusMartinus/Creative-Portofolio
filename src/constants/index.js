@@ -26,6 +26,7 @@ import {
   project5,
   project6,
   project16,
+  project17,
   me,
   CV_Duncan,
   email,
@@ -350,6 +351,24 @@ const projects = [
     image: project16,
     source_code_link: "https://alfeus-college-blog.webflow.io/",
     demo_link: "https://alfeus-college-blog.webflow.io/",
+  },
+  {
+    name: "Your Notes",
+    description:
+      "Web App Notes Create Use ReactJS and Build Tool Vite",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project17,
+    source_code_link: "https://github.com/AlfeusMartinus/Your-Notes",
+    demo_link: "https://notes-app-landing.netlify.app/",
   },
 ];
 
