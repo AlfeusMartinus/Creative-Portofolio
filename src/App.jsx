@@ -31,10 +31,9 @@ const App = () => {
 
           <div className="relative z-0">
             <Contact />
+            <Footer />
             <StarsCanvas />
           </div>
-
-          <Footer />
         </div>
       </BrowserRouter>
   );
