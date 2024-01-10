@@ -4,7 +4,8 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { CVDuncan, myWords } from "../constants";
-import CVDoc from "../assets/CV_AlfeusMartinus.docx";
+
+import { CV_Image } from "../assets/index";
 
 const Card = ({ index, text, name, designation, company, image }) => (
   <div className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full select-none">
@@ -50,11 +51,11 @@ const CV = () => {
         ))}
 
         <div className="bg-black-200 p-10 rounded-3xl xs:w-[640px] w-full">
-          <div className="flex min-[850px]:flex-row flex-col justify-around items-center">
+          <div className="flex min-[850px]:flex-row flex-col justify-around items-center gap-3">
             <img src={CVDuncan} alt="CVDuncan" className="w-[250px]" />
-
-            <a href={CVDoc} download>
-              <button className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[21px]">
+            <a href='https://drive.google.com/file/d/1cfIWG9mxPDJkvXYPbpRbwdogP3TKKT-9/view?usp=sharing' target="_blank">
+              <img src={CV_Image} alt="" className={`rounded-lg drop-shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-75 mb-5`}/>
+              <button className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary text-[21px] transition ease-in-out hover:-translate-y-1 hover:scale-110">
                 Download CV
               </button>
             </a>
