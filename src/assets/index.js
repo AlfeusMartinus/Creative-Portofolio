@@ -45,6 +45,7 @@ import project5 from "./projects/project5.jpg"
 import project6 from "./projects/project6.jpg"
 import project16 from "./projects/project16.png"
 import project17 from "./projects/project17.png"
+import project18 from "./projects/project18.png"
 
 export {
   me,
@@ -84,6 +85,7 @@ export {
   project6,
   project16,
   project17,
+  project18,
   email,
   githubb,
   linkedin,
