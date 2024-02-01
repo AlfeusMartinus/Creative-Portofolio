@@ -26,6 +26,8 @@ import {
   project5,
   project6,
   project16,
+  project17,
+  project18,
   me,
   CV_Duncan,
   email,
@@ -340,16 +342,52 @@ const projects = [
     tags: [
       {
         name: "cms",
-        color: "blue-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "webflow",
-        color: "green-text-gradient",
+        color: "pink-text-gradient",
       },
     ],
     image: project16,
     source_code_link: "https://alfeus-college-blog.webflow.io/",
     demo_link: "https://alfeus-college-blog.webflow.io/",
+  },
+  {
+    name: "Your Notes",
+    description:
+      "Web App Notes Create Use ReactJS and Build Tool Vite",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project17,
+    source_code_link: "https://github.com/AlfeusMartinus/Your-Notes",
+    demo_link: "https://notes-app-landing.netlify.app/",
+  },
+  {
+    name: "Book Shelf Apps",
+    description:
+      "Submission of Data Management Applications Using DOM and Web Storage",
+    tags: [
+      {
+        name: "Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project18,
+    source_code_link: "https://github.com/AlfeusMartinus/bookshelf-apps",
+    demo_link: "https://bookslistapp.netlify.app/",
   },
 ];
 
@@ -358,7 +396,7 @@ const SocialMedia = [
     id: 1,
     icon: email,
     navigate:
-      "mailto:feusmartinus@gmail.com?subject=Hai%20Alfeus%21%20Bisakah%20Saya%20Menghubungi%20Anda%3F",
+      "mailto:feusmartinus@gmail.com?subject=Hai%20Alfeus%20Martinus%21%20Bisakah%20Saya%20Menghubungi%20Anda%3F",
   },
   {
     id: 2,
