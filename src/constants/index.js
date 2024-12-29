@@ -1,8 +1,8 @@
 import {
   react,
-  js,
-  twcss,
   cpp,
+  android,
+  kotlin,
   javascript,
   html,
   css,
@@ -13,12 +13,12 @@ import {
   figma,
   vite,
   webflow,
-  canva,
   flyon,
   gamki,
   envisteam,
   gkp,
   gdsc,
+  bangkit,
   project1,
   project2,
   project3,
@@ -34,6 +34,15 @@ import {
   githubb,
   linkedin,
   instagram,
+  amanah,
+  kotlinTech,
+  compose,
+  retrofit,
+  postman,
+  androidStudio,
+  project19,
+  project20,
+  project21,
 } from "../assets";
 
 export const CVDuncan = CV_Duncan;
@@ -74,12 +83,12 @@ const services = [
     icon: react,
   },
   {
-    title: "Vannila JS",
-    icon: js,
+    title: "Kotlin",
+    icon: kotlin,
   },
   {
-    title: "Tailwind CSS",
-    icon: twcss,
+    title: "Android",
+    icon: android,
   },
 ];
 
@@ -125,18 +134,66 @@ const technologies = [
     icon: webflow,
   },
   {
-    name: "canva",
-    icon: canva,
+    name: "kotlinTech",
+    icon: kotlinTech,
+  },
+  {
+    name: "compose",
+    icon: compose,
+  },
+  {
+    name: "retrofit",
+    icon: retrofit,
+  },
+  {
+    name: "postman",
+    icon: postman,
+  },
+  {
+    name: "android",
+    icon: androidStudio,
   },
 ];
 
 const experiences = [
   {
+    title: "Android Developer & Project Manager",
+    company_name: "PT Amanah Karya Indonesia - Amanah Corp",
+    icon: amanah,
+    iconBg: "#E6DEDD",
+    date: "Oct 2024 - Dec 2025",
+    points: [
+      "Developed and maintained the Berbagi.link Android application, focusing on the online store module.",
+      "Built features including store pages, product management, sales tracking, and marketing tools to enhance user experience.",
+      "Utilized Kotlin with the MVVM clean architecture to ensure a scalable and maintainable codebase.",
+      "Designed user interfaces using XML Layouts to create responsive and intuitive designs.",
+      "Implemented API communication using Retrofit for efficient and reliable data exchange with backend services.",
+      "Acted as Project Manager, overseeing project timelines, delegating tasks to team members, and ensuring the successful delivery of the application module.",
+      "Collaborated with stakeholders to gather requirements and ensure the application's features met business objectives.",
+      "Facilitated team meetings, tracked progress, and resolved challenges to maintain project momentum and alignment."
+    ],
+    id: 7,
+  },
+  {
+    title: "Mobile Development Cohort",
+    company_name: "Bangkit Academy Batch 2 led by Google, Tokopedia, Gojek, & Traveloka",
+    icon: bangkit,
+    iconBg: "#E6DEDD",
+    date: "Sep 2024 - Jan 2025",
+    points: [
+      "Learning Android development using Kotlin and Jetpack Compose to build modern and efficient mobile applications.",
+      "Exploring the implementation of machine learning in Android applications to deliver smarter and more personalized user experiences.",
+      "Mastering clean architecture principles to ensure scalable, maintainable, and robust codebases in Android development.",
+      "Enhancing soft skills, particularly in English communication, to effectively collaborate and share ideas in an international environment."
+    ],
+    id: 6,
+  },
+  {
     title: "Curriculum Web Developer",
     company_name: "Google Developer Students Club - UPI",
     icon: gdsc,
     iconBg: "#E6DEDD",
-    date: "Oct 2023 - Present",
+    date: "Oct 2023 - Oct 2024",
     points: [
       "Sharing about how a web page and its components work.",
       "Learn together in a case study, namely building a web page and publishing it for public viewing.",
@@ -207,6 +264,72 @@ const myWords = [
 ];
 
 const projects = [
+  {
+    name: "Berbagi.link",
+    description:
+      "A mobile Android app with an online store, events, real-time updates, and MVVM architecture",
+    tags: [
+      {
+        name: "kotlin",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MVVM",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "retrofit",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project19,
+    source_code_link: "https://github.com/AlfeusMartinus",
+    demo_link: "https://envisteam.my.id/",
+  },
+  {
+    name: "Coin Market",
+    description:
+      "A mobile app offering cryptocurrency prices, market trends, API integration, and efficient data visualization",
+    tags: [
+      {
+        name: "recycle-view",
+        color: "green-text-gradient",
+      },
+      {
+        name: "kotlin",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "crypto",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project20,
+    source_code_link: "https://github.com/AlfeusMartinus",
+    demo_link: "https://github.com/AlfeusMartinus",
+  },
+  {
+    name: "CeritaMu",
+    description:
+      "A storytelling app allowing users to register, log in, upload, and share their personal stories",
+    tags: [
+      {
+        name: "maps",
+        color: "green-text-gradient",
+      },
+      {
+        name: "intent-camera",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "kotlin",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: project21,
+    source_code_link: "https://github.com/AlfeusMartinus",
+    demo_link: "https://github.com/AlfeusMartinus",
+  },
   {
     name: "Envi-STEAM",
     description:
