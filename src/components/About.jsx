@@ -40,11 +40,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hello, I'm Feus! I'm dedicated continuously expanding my knwoledge and
-        skills in{" "}
-        <b className="font-bold text-cyan-50">front-end development</b> and
-        learning new technologies. I'm able to develop web applications, consume
-        APIs and strive to deliver high-quality code.
+        Hello, I'm Feus! I'm a passionate developer continuously expanding my knowledge and skills in{" "}
+        <b className="font-bold text-cyan-50">front-end development</b>. I specialize in building responsive web applications, consuming APIs, and delivering high-quality code. Additionally, I have experience developing <b className="font-bold text-cyan-50">Android mobile applications</b>, leveraging modern frameworks and tools to create user-friendly and performant apps.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

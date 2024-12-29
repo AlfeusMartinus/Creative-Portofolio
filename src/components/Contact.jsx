@@ -65,7 +65,6 @@ const Contact = () => {
   };
 
   return (
-    <>
       <div className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <h3 className={styles.sectionHeadText}>Contact Me📭</h3>
 
@@ -122,7 +121,6 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </>
   );
 };
 
