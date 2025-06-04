@@ -50,7 +50,7 @@ const CV = () => {
           <Card key={myWords.name} index={index} {...myWords} />
         ))}
 
-        <div className="bg-black-200 p-10 rounded-3xl xs:w-[640px] w-full">
+        <div className="bg-black-200 p-10 rounded-3xl w-full max-w-[640px]">
           <div className="flex min-[850px]:flex-row flex-col justify-around items-center gap-3">
             <img src={CVDuncan} alt="CVDuncan" className="w-[250px]" />
             <a href='https://drive.google.com/file/d/1fa9pZsW_rKx8ParOP11oWapqmO2XUTI5/view' target="_blank">
