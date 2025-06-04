@@ -34,6 +34,15 @@ import compose from "./tech/compose.png"
 import postman from "./tech/postman.png"
 import retrofit from "./tech/retrofit.png"
 import androidStudio from "./tech/androidstudio.png"
+import typescript from "./tech/typescript.png"
+import nextjs from "./tech/nextjs.png"
+import express from "./tech/express.png"
+import postgresql from "./tech/postgresql.png"
+import mongodb from "./tech/mongodb.png"
+import redis from "./tech/redis.png"
+import flutter from "./tech/flutter.png"
+import docker from "./tech/docker.png"
+import aws from "./tech/aws.png"
 
 import flyon from "./company/flyon.png"
 import gamki from "./company/gamki.png"
@@ -42,6 +51,7 @@ import gkp from "./company/gkp.png"
 import gdsc from "./company/gdsc.png"
 import bangkit from "./company/bangkit.png"
 import amanah from "./company/amanah.png"
+import telkom from "./company/telkom.png"
 
 import project1 from "./projects/project1.jpg"
 import project2 from "./projects/project2.jpg"
@@ -109,4 +119,14 @@ export {
   linkedin,
   medium,
   instagram,
+  typescript,
+  nextjs,
+  express,
+  postgresql,
+  mongodb,
+  redis,
+  flutter,
+  docker,
+  aws,
+  telkom,
 }

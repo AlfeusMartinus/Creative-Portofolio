@@ -43,6 +43,16 @@ import {
   project19,
   project20,
   project21,
+  typescript,
+  nextjs,
+  express,
+  postgresql,
+  mongodb,
+  redis,
+  flutter,
+  docker,
+  aws,
+  telkom,
 } from "../assets";
 
 export const CVDuncan = CV_Duncan;
@@ -75,87 +85,102 @@ export const navLinks = [
 
 const services = [
   {
-    title: "C++",
-    icon: cpp,
-  },
-  {
-    title: "React Developer",
+    title: "Frontend Web Development",
     icon: react,
   },
   {
-    title: "Kotlin",
-    icon: kotlin,
+    title: "Mobile App Development",
+    icon: android,
   },
   {
-    title: "Android",
-    icon: android,
+    title: "Backend Development",
+    icon: nodejs,
+  },
+  {
+    title: "DevOps & CI/CD",
+    icon: git,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
+    name: "React",
     icon: reactjs,
   },
   {
-    name: "Vite",
-    icon: vite,
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "Node.js",
     icon: nodejs,
   },
   {
-    name: "git",
-    icon: git,
+    name: "Express.js",
+    icon: express,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
-    name: "webflow",
-    icon: webflow,
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
-    name: "kotlinTech",
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "Kotlin",
     icon: kotlinTech,
   },
   {
-    name: "compose",
+    name: "Jetpack Compose",
     icon: compose,
   },
   {
-    name: "retrofit",
-    icon: retrofit,
+    name: "Flutter",
+    icon: flutter,
   },
   {
-    name: "postman",
-    icon: postman,
+    name: "Git",
+    icon: git,
   },
   {
-    name: "android",
-    icon: androidStudio,
+    name: "Docker",
+    icon: docker,
+  },
+  {
+    name: "AWS",
+    icon: aws,
   },
 ];
 
 const experiences = [
+  {
+    title: "Frontend Developer",
+    company_name: "PT Telkom Indonesia",
+    icon: telkom,
+    iconBg: "#E6DEDD",
+    date: "Feb 2025 - Present",
+    points: [
+      "Served as a Front-End Developer in the development of Telkom Partner Network (TPN), an internal platform of Telkom Indonesia designed to facilitate the management and collaboration with the company's strategic partners. This platform functions as a centralized hub for coordination, data integration, and efficient digital management of partnership activities.",
+      "Contributed to multiple internal projects including FM-Asset, FM-CMS, and Infinite Lite - GCT, demonstrating versatility in handling diverse project requirements.",
+      "Implemented TypeScript for robust type-safe development, ensuring code quality and maintainability across all projects.",
+      "Developed and integrated new features through efficient API consumption and backend integration, enhancing platform functionality.",
+      "Collaborated with cross-functional teams to deliver high-quality solutions while maintaining best practices in frontend development.",
+    ],
+    id: 8,
+  },
   {
     title: "Android Developer & Project Manager",
     company_name: "PT Amanah Karya Indonesia - Amanah Corp",

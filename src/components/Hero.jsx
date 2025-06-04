@@ -8,9 +8,7 @@ import { SocialMedia } from "../constants";
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
-      "Sok deket sama Front-end Web",
-      "LagiSukaSama.jsx",
-      'Ada Loker ? "Kontak Saya" : "Yaudah";',
+      'hasInternet ? "Online and unstoppable! 🌐💪" : "No internet? Guess I\'ll just stare at my code. 🫠";',
     ],
     loop: true,
     delaySpeed: 2000,
