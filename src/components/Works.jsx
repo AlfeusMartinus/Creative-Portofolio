@@ -1,119 +1,115 @@
-import Tilt from "react-parallax-tilt";
+import React from "react";
 import { motion } from "framer-motion";
+import { projects } from "../constants";
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { linkGithub, projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+const ProjectCard = ({ name, description, tags, image, source_code_link, demo_link, index }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: index * 0.1, duration: 0.5 }}
+    viewport={{ once: true }}
+    className="glass-card group overflow-hidden relative h-[380px] md:h-[450px]"
+  >
+    <img
+      src={image}
+      alt={name}
+      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+      loading="lazy"
+    />
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  demo_link,
-}) => {
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0, 5, 0.75)}>
-      <Tilt
-        tiltMaxAngleX={45}
-        tiltMaxAngleY={45}
-        scale={1}
-        transitionSpeed={450}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300"></div>
+
+    <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <a
+        href={source_code_link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-white/20 transition-colors"
+        aria-label="View Source Code"
       >
-        <div
-          className="relative w-full h-[230px] cursor-pointer"
-          onClick={() => window.open(demo_link, "_blank")}
-        >
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
+        <span className="material-symbols-outlined text-white text-xl">code</span>
+      </a>
+      <a
+        href={demo_link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-white/20 transition-colors"
+        aria-label="View Demo"
+      >
+        <span className="material-symbols-outlined text-white text-xl">open_in_new</span>
+      </a>
+    </div>
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2 select-none">
+    <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6">
+      <div className="glass p-5 md:p-6 rounded-xl border border-white/20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+        <h3 className="text-lg md:text-xl font-bold text-white mb-3">{name}</h3>
+        <p className="text-sm text-slate-300 mb-4 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          {description}
+        </p>
+        <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
+            <span
+              key={tag.name}
+              className="text-[9px] md:text-[10px] uppercase font-bold tracking-widest bg-white/20 px-2 py-1 rounded"
+            >
+              {tag.name}
+            </span>
           ))}
         </div>
-      </Tilt>
-    </motion.div>
-  );
-};
+      </div>
+    </div>
+  </motion.div>
+);
 
 const Works = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+    <section id="projects" className="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+      <span className="hash-span" id="projects">
+        &nbsp;
+      </span>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="mb-12 md:mb-20 text-center md:text-left"
+      >
+        <h4 className="text-primary font-bold tracking-widest uppercase text-xs mb-4">
+          Portfolio
+        </h4>
+        <h2 className="text-4xl md:text-5xl font-display font-bold">
+          Featured Projects
+        </h2>
+        <p className="text-slate-400 mt-4 max-w-2xl">
+          A showcase of my recent work spanning mobile apps, web applications, and more.
+        </p>
       </motion.div>
-
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          These are some of the projects I have created. These projects have not
-          only helped me build my portfolio, but also enhanced the skills I have
-          developed.
-        </motion.p>
-      </div>
-
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={project.name} {...project} index={index} />
         ))}
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center">
-        <p className="mt-24 text-secondary text-[21px] max-w-3xl leading-[30px] text-center">
-          Create any project? This and much more you can find in my GitHub at
-          the link below.
-        </p>
-
-        <div
-          className="green-pink-gradient p-[1px] rounded-full flex justify-center items-center cursor-pointer mt-4 select-none"
-          onClick={() => window.open(linkGithub, "_blank")}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        viewport={{ once: true }}
+        className="text-center mt-12"
+      >
+        <a
+          href="https://github.com/AlfeusMartinus"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 glass-pill px-8 py-4 text-sm font-semibold hover:bg-white/15 transition-colors"
         >
-          <div className="bg-tertiary rounded-full px-3 py-2 flex justify-evenly items-center">
-            <img
-              src={github}
-              alt="source code"
-              className="w-[40px] h-[40px] object-contain"
-            />
-
-            <p className="text-[21px]">GitHub</p>
-          </div>
-        </div>
-      </div>
-    </>
+          View More on GitHub
+          <span className="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+      </motion.div>
+    </section>
   );
 };
 
-export default SectionWrapper(Works, "projects");
+export default Works;

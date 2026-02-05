@@ -1,58 +1,120 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { personalInfo, stats, services } from "../constants";
 
-import { styles } from "../styles";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt
-    tiltMaxAngleX={45}
-    tiltMaxAngleY={45}
-    scale={1}
-    transitionSpeed={450}
-    className="xs:w-[250px] w-full"
+const StatCard = ({ value, label, index }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: index * 0.1, duration: 0.5 }}
+    viewport={{ once: true }}
+    className="glass-card p-6 md:p-8 text-center border-white/20 bg-white/10"
   >
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-    >
-      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
-      </div>
-    </motion.div>
-  </Tilt>
+    <div className="text-3xl md:text-4xl font-black gradient-text mb-1">
+      {value}
+    </div>
+    <div className="text-[10px] uppercase tracking-widest font-bold opacity-60">
+      {label}
+    </div>
+  </motion.div>
+);
+
+const ServiceCard = ({ title, icon, description, index }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: index * 0.1, duration: 0.5 }}
+    viewport={{ once: true }}
+    className="glass-card p-6 md:p-8 group"
+  >
+    <img
+      src={icon}
+      alt={title}
+      className="w-12 h-12 mb-4 group-hover:scale-110 transition-transform duration-300"
+    />
+    <h3 className="font-bold text-lg md:text-xl mb-2">{title}</h3>
+    <p className="text-sm opacity-60">{description}</p>
+  </motion.div>
 );
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>About Me🚀</h2>
-      </motion.div>
+    <section id="about" className="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+      <span className="hash-span" id="about">
+        &nbsp;
+      </span>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I am a passionate and versatile Full Stack Developer with a strong focus on Front-end Development. My expertise spans across both web and mobile platforms, where I excel in creating responsive, user-centric applications. In web development, I specialize in modern frameworks like <b className="font-bold text-cyan-50">React</b>, <b className="font-bold text-cyan-50">TypeScript</b>, and <b className="font-bold text-cyan-50">Next.js</b>, delivering robust and scalable solutions. For mobile development, I leverage <b className="font-bold text-cyan-50">Kotlin</b>, <b className="font-bold text-cyan-50">Jetpack Compose</b>, and <b className="font-bold text-cyan-50">Flutter</b> to build cross-platform applications with native-like performance.
+      <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="space-y-8 md:space-y-10">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="space-y-4"
+          >
+            <div className="flex items-center gap-2">
+              <div className="h-[1px] w-8 bg-primary"></div>
+              <h4 className="text-primary font-bold tracking-[0.2em] uppercase text-xs">
+                Full-Stack Developer
+              </h4>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold">
+              About My <br />
+              Craft 🧪
+            </h2>
+          </motion.div>
 
-        Beyond front-end development, I possess comprehensive back-end capabilities, including <b className="font-bold text-cyan-50">Node.js</b> and <b className="font-bold text-cyan-50">Express.js</b> for server-side development. My database expertise encompasses both SQL and NoSQL solutions, with proficiency in <b className="font-bold text-cyan-50">PostgreSQL</b>, <b className="font-bold text-cyan-50">MongoDB</b>, and <b className="font-bold text-cyan-50">Redis</b>. I am well-versed in designing and implementing <b className="font-bold text-cyan-50">RESTful APIs</b>, ensuring seamless integration between front-end and back-end systems.
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-base md:text-lg text-slate-400 leading-relaxed max-w-lg"
+          >
+            {personalInfo.bio}
+          </motion.p>
+        </div>
 
-        I am committed to writing clean, maintainable code and following industry best practices. My approach combines technical excellence with a strong focus on user experience, enabling me to deliver high-quality solutions that meet both technical requirements and user needs.
-      </motion.p>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="absolute inset-0 bg-blue-500/10 blur-[100px] rounded-full"></div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+          <div className="glass p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] border-white/20 relative shadow-2xl backdrop-blur-3xl">
+            <div className="grid grid-cols-2 gap-4 md:gap-8">
+              <div className="space-y-4 md:space-y-8">
+                {stats.slice(0, 2).map((stat, index) => (
+                  <StatCard key={stat.label} {...stat} index={index} />
+                ))}
+              </div>
+              <div className="space-y-4 md:space-y-8 mt-8 md:mt-12">
+                {stats.slice(2, 4).map((stat, index) => (
+                  <StatCard key={stat.label} {...stat} index={index + 2} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12"
+      >
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} {...service} index={index} />
+        ))}
+      </motion.div>
+    </section>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;

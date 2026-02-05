@@ -1,8 +1,6 @@
 import {
   react,
-  cpp,
   android,
-  kotlin,
   javascript,
   html,
   css,
@@ -28,8 +26,7 @@ import {
   project16,
   project17,
   project18,
-  me,
-  CV_Duncan,
+  avatar,
   email,
   githubb,
   linkedin,
@@ -53,281 +50,238 @@ import {
   docker,
   aws,
   telkom,
+  dbs,
+  pyromi,
 } from "../assets";
-
-export const CVDuncan = CV_Duncan;
 
 export const linkGithub = "https://github.com/AlfeusMartinus";
 
+// ===== NAVIGATION =====
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "experience",
-    title: "Experience",
-  },
-  {
-    id: "projects",
-    title: "Projects",
-  },
-  {
-    id: "cv",
-    title: "Download CV",
-  },
-
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", title: "About" },
+  { id: "experience", title: "Experience" },
+  { id: "projects", title: "Projects" },
+  { id: "contact", title: "Contact" },
 ];
 
-const services = [
+// ===== PERSONAL INFO =====
+export const personalInfo = {
+  name: "Alfeus Martinus",
+  title: "Software Engineer",
+  location: "Bandung, Indonesia",
+  email: "feusmartinus@gmail.com",
+  phone: "+62 881-0234-10516",
+  website: "alfeus.space",
+  bio: "Software Engineering Graduate from Universitas Pendidikan Indonesia, completed degree in 3.5 years with a 3.87/4.00 GPA (Cumlaude). Full-stack Developer with 2+ years of experience building production-grade systems, including high-impact internal modules at Telkom Indonesia and international projects at Pyromi Pte. Ltd.",
+  tagline: "Building high-performance digital ecosystems through elegant code.",
+};
+
+// ===== STATS =====
+export const stats = [
+  { value: "2+", label: "Years Exp" },
+  { value: "50+", label: "Projects" },
+  { value: "12", label: "Clients" },
+  { value: "99%", label: "SLA Rate" },
+];
+
+// ===== SERVICES =====
+export const services = [
   {
-    title: "Frontend Web Development",
+    title: "Frontend Development",
     icon: react,
+    description: "Next.js, React, TypeScript, Tailwind",
   },
   {
-    title: "Mobile App Development",
+    title: "Mobile Development",
     icon: android,
+    description: "Kotlin, Jetpack Compose, Flutter",
   },
   {
     title: "Backend Development",
     icon: nodejs,
+    description: "Node.js, Express, PostgreSQL",
   },
   {
     title: "DevOps & CI/CD",
     icon: git,
+    description: "Docker, GCP, AWS",
   },
 ];
 
-const technologies = [
+// ===== TECHNOLOGIES =====
+export const technologies = [
+  { name: "TypeScript", icon: typescript },
+  { name: "React", icon: reactjs },
+  { name: "Next.js", icon: nextjs },
+  { name: "Node.js", icon: nodejs },
+  { name: "Kotlin", icon: kotlinTech },
+  { name: "PostgreSQL", icon: postgresql },
+  { name: "Docker", icon: docker },
+  { name: "GCP/AWS", icon: aws },
+];
+
+// ===== EDUCATION =====
+export const education = {
+  institution: "Universitas Pendidikan Indonesia",
+  degree: "Bachelor of Software Engineering",
+  period: "Aug 2022 - Feb 2026",
+  gpa: "3.87 / 4.00",
+  thesis: "Development of Web Accessibility Violation Detection Tool (WCAG 2.1 Level A) using Static Code Analysis and DOM Tree for React Applications.",
+  notableProjects: "Developed a static code analysis tool to detect WCAG 2.1 Level A violations in React applications, utilizing DOM Tree traversal to automate accessibility auditing.",
+};
+
+// ===== KEY ACHIEVEMENTS =====
+export const achievements = [
   {
-    name: "React",
-    icon: reactjs,
+    title: "Jabar Future Leaders Scholarship (JFLS) 2023",
+    description: "Granted by the Governor of West Java and West Java Education Department for outstanding leadership and activism.",
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "Next.js",
-    icon: nextjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node.js",
-    icon: nodejs,
-  },
-  {
-    name: "Express.js",
-    icon: express,
-  },
-  {
-    name: "PostgreSQL",
-    icon: postgresql,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Redis",
-    icon: redis,
-  },
-  {
-    name: "Kotlin",
-    icon: kotlinTech,
-  },
-  {
-    name: "Jetpack Compose",
-    icon: compose,
-  },
-  {
-    name: "Flutter",
-    icon: flutter,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
-  {
-    name: "Docker",
-    icon: docker,
-  },
-  {
-    name: "AWS",
-    icon: aws,
+    title: "Bangkit Academy 2024 - Distinction Graduate",
+    description: "Top 10% of cohort. Certificate of Completion in Mobile Development.",
   },
 ];
 
-const experiences = [
+// ===== PROFESSIONAL EXPERIENCE =====
+export const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "PT Telkom Indonesia",
-    icon: telkom,
+    title: "Mentor Full-Stack Developer",
+    company_name: "Coding Camp powered by DBS Foundation",
+    icon: dbs,
     iconBg: "#E6DEDD",
-    date: "Feb 2025 - Present",
+    date: "Jan 2026 - Present",
     points: [
-      "Served as a Front-End Developer in the development of Telkom Partner Network (TPN), an internal platform of Telkom Indonesia designed to facilitate the management and collaboration with the company's strategic partners. This platform functions as a centralized hub for coordination, data integration, and efficient digital management of partnership activities.",
-      "Contributed to multiple internal projects including FM-Asset, FM-CMS, and Infinite Lite - GCT, demonstrating versatility in handling diverse project requirements.",
-      "Implemented TypeScript for robust type-safe development, ensuring code quality and maintainability across all projects.",
-      "Developed and integrated new features through efficient API consumption and backend integration, enhancing platform functionality.",
-      "Collaborated with cross-functional teams to deliver high-quality solutions while maintaining best practices in frontend development.",
+      "Facilitating and mentoring students in a nationwide full-stack development program, focusing on industry-standard web technologies and clean code practices.",
+      "Conducting technical guidance and code reviews to ensure participants build scalable and maintainable web applications.",
+      "Collaborating with the instructional team to deliver case-based learning sessions and improve student learning outcomes.",
     ],
-    id: 8,
+    id: 1,
   },
   {
-    title: "Android Developer & Project Manager",
-    company_name: "PT Amanah Karya Indonesia - Amanah Corp",
-    icon: amanah,
+    title: "Software Developer",
+    company_name: "Pyromi Pte. Ltd. (Remote - Singapore)",
+    icon: pyromi,
     iconBg: "#E6DEDD",
-    date: "Oct 2024 - Dec 2025",
+    date: "Oct 2025 - Present",
     points: [
-      "Developed and maintained the Berbagi.link Android application, focusing on the online store module.",
-      "Built features including store pages, product management, sales tracking, and marketing tools to enhance user experience.",
-      "Utilized Kotlin with the MVVM clean architecture to ensure a scalable and maintainable codebase.",
-      "Designed user interfaces using XML Layouts to create responsive and intuitive designs.",
-      "Implemented API communication using Retrofit for efficient and reliable data exchange with backend services.",
-      "Acted as Project Manager, overseeing project timelines, delegating tasks to team members, and ensuring the successful delivery of the application module.",
-      "Collaborated with stakeholders to gather requirements and ensure the application's features met business objectives.",
-      "Facilitated team meetings, tracked progress, and resolved challenges to maintain project momentum and alignment."
-    ],
-    id: 7,
-  },
-  {
-    title: "Mobile Development Cohort",
-    company_name: "Bangkit Academy Batch 2 led by Google, Tokopedia, Gojek, & Traveloka",
-    icon: bangkit,
-    iconBg: "#E6DEDD",
-    date: "Sep 2024 - Jan 2025",
-    points: [
-      "Learning Android development using Kotlin and Jetpack Compose to build modern and efficient mobile applications.",
-      "Exploring the implementation of machine learning in Android applications to deliver smarter and more personalized user experiences.",
-      "Mastering clean architecture principles to ensure scalable, maintainable, and robust codebases in Android development.",
-      "Enhancing soft skills, particularly in English communication, to effectively collaborate and share ideas in an international environment."
-    ],
-    id: 6,
-  },
-  {
-    title: "Curriculum Web Developer",
-    company_name: "Google Developer Students Club - UPI",
-    icon: gdsc,
-    iconBg: "#E6DEDD",
-    date: "Oct 2023 - Oct 2024",
-    points: [
-      "Sharing about how a web page and its components work.",
-      "Learn together in a case study, namely building a web page and publishing it for public viewing.",
-      "Building portfolios and persona profiles of GDSC members via the LinkedIn platform.",
-    ],
-    id: 5,
-  },
-  {
-    title:
-      "Chairman of the Youth Management Commission (KPR) GKP Jemaat Cimahi",
-    company_name: "KPR GKPJ CIMAHI",
-    icon: gkp,
-    iconBg: "#E6DEDD",
-    date: "2022 - Present",
-    points: [
-      "Led the youth of the Pasundan Christian Church in Cimahi city for the period 2023-2024, overseeing various aspects of their spiritual and social development.",
-      "Organized and facilitated various events and activities for the youth, such as worship services, bible studies, retreats, and outreach programs.",
-    ],
-    id: 4,
-  },
-  {
-    title:
-      "Active member of the Indonesian Christian Youth Movement (GAMKI) DPC Kota Cimahi",
-    company_name: "DPC GAMKI Kota Cimahi",
-    icon: gamki,
-    iconBg: "#E6DEDD",
-    date: "2021 - Present",
-    points: [
-      "Held the position of External Division Staff, responsible for coordinating and communicating with external parties such as other organizations, and government agencies.",
-      "Participated in various activities and programs organized by GAMKI, such as seminars, workshops, social services, and internal activites.",
-    ],
-    id: 3,
-  },
-  {
-    title: "Frontend Developer",
-    company_name: "Envi-STEAM",
-    icon: envisteam,
-    iconBg: "#E6DEDD",
-    date: "January - August 2023",
-    points: [
-      "Development commercial multipage education website. The site is organized into multiple pages, each containing valuable information and tools for students, educators, and anyone interested in learning.",
-      "Development using HTML, CSS, Javascript (Vanilla)",
-      "SEO Performance and HTTPS Protocol Network",
+      "Developing high-performance software solutions for an international startup based in Singapore, focusing on video editing technology.",
+      "Architecting and implementing features for the Pyromi platform, ensuring a seamless and responsive user experience for professional video workflows.",
+      "Managing cross-border collaboration and agile delivery within a distributed engineering team.",
     ],
     id: 2,
   },
   {
     title: "Frontend Developer",
-    company_name: "Flyon Tech - Digital Marketing Agency",
+    company_name: "Telkom Indonesia",
+    icon: telkom,
+    iconBg: "#E6DEDD",
+    date: "Feb 2025 - Sep 2025",
+    points: [
+      "Served as a Front-End Developer in the development of Telkom Partner Network (TPN), an internal platform designed to facilitate management and collaboration with strategic partners.",
+      "Developed website interface enhancements for the partnership section and created a user notification module.",
+      "INFINITE — HKI module: built IP submission & review workflows, advanced validation forms, RBAC, and audit trail; FE with React (TS) & Tailwind.",
+      "Facility Management (FM): improved asset mapping and issue tracking UX; integrated notifications and search; delivered UI polish for internal users.",
+      "GCT: developed internal dashboards and tooling to streamline operations and reporting across teams.",
+    ],
+    id: 3,
+  },
+  {
+    title: "Web Developer",
+    company_name: "PT Digital House Nusantara",
     icon: flyon,
     iconBg: "#E6DEDD",
-    date: "June 2022 - September 2023",
+    date: "Jan 2025 - Apr 2025",
     points: [
-      "Development commercial website of UMKM products using Elementor Framework, Wordpress, SEO, and Integration with Google Web technologies.",
+      "Led company website development, coordinating with management and engineering to define milestones and align delivery with business goals.",
+      "Delivered key features: portfolio showcase, career pages, and admin dashboard.",
+      "Practiced agile execution using Taiga; drove stakeholder communication and progress tracking.",
     ],
-    id: 1,
+    id: 4,
+  },
+  {
+    title: "Android Developer & Project Manager",
+    company_name: "PT Amanah Karya Indonesia",
+    icon: amanah,
+    iconBg: "#E6DEDD",
+    date: "Dec 2024 - Feb 2025",
+    points: [
+      "Served as Project Manager and Tech Lead for Android Development, overseeing the marketplace module in the Berbagi.link application.",
+      "Built features including store pages, product management, sales tracking, and marketing tools.",
+      "Utilized Kotlin with MVVM clean architecture to ensure a scalable and maintainable codebase.",
+    ],
+    id: 5,
+  },
+  {
+    title: "Mobile Development Cohort",
+    company_name: "Bangkit Academy by Google, GoTo, Tokopedia, Traveloka",
+    icon: bangkit,
+    iconBg: "#E6DEDD",
+    date: "Sep 2024 - Jan 2025",
+    points: [
+      "Converted 20 SKS with focus on Android Development, Firebase, and Google Cloud Integration.",
+      "Experienced in building scalable Android applications with Kotlin, adhering to clean architecture principles and MVVM design pattern.",
+      "Proficient in Retrofit for API integration, Firebase for backend services, JUnit and MockK for unit testing, and implementing Machine Learning models on Android platforms.",
+    ],
+    id: 6,
   },
 ];
 
-const myWords = [
+// ===== ORGANIZATIONAL EXPERIENCE =====
+export const organizationalExperience = [
   {
-    text: "Here you can download my СV by clicking on Download button. I will be glad to our cooperation. ➡️",
+    title: "Core Team Member",
+    organization: "Google Developer Group Bandung",
+    date: "Apr 2025 - Present",
+    points: [
+      "Serving as a Core Team member to strategize and execute large-scale developer events, fostering a local ecosystem of 1,000+ tech enthusiasts.",
+      "JuaraGCP Facilitator: Actively facilitating the JuaraGCP Bandung event, guiding participants through Google Cloud Skills Boost labs.",
+      "DevFest Bandung 2025 (Speaker Liaison): Acted as the dedicated Liaison Officer for high-profile keynote speakers.",
+      "Facilitated technical discussions and built professional rapport with industry leaders and Google Developer Experts (GDEs).",
+    ],
+  },
+  {
+    title: "Web Curriculum",
+    organization: "Google Developer Students Club (GDSC) Chapter UPI",
+    date: "Nov 2023 - May 2024",
+    points: [
+      "Facilitated collaborative learning sessions via Google Meet, focusing on case-based studies like building web pages and publishing them for public access.",
+      "Contributed to portfolio development and LinkedIn profiles for GDSC members, aiming to enhance professional networking and online presence.",
+    ],
+  },
+];
+
+// ===== MY WORDS =====
+export const myWords = [
+  {
+    text: "Download my CV to learn more about my experience and skills. I'm excited about the opportunity to collaborate! ➡️",
     name: "Alfeus Martinus",
     designation: "Software Engineering",
     company: "Universitas Pendidikan Indonesia",
-    image: me,
+    image: avatar,
   },
 ];
 
-const projects = [
+// ===== PROJECTS =====
+export const projects = [
   {
     name: "Berbagi.link",
-    description:
-      "A mobile Android app with an online store, events, real-time updates, and MVVM architecture",
+    description: "A mobile Android app with an online store, events, real-time updates, and MVVM architecture",
     tags: [
-      {
-        name: "kotlin",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MVVM",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "retrofit",
-        color: "pink-text-gradient",
-      },
+      { name: "kotlin", color: "green-text-gradient" },
+      { name: "MVVM", color: "blue-text-gradient" },
+      { name: "retrofit", color: "pink-text-gradient" },
     ],
     image: project19,
     source_code_link: "https://github.com/AlfeusMartinus",
-    demo_link: "https://envisteam.my.id/",
+    demo_link: "https://berbagi.link/",
   },
   {
     name: "Coin Market",
-    description:
-      "A mobile app offering cryptocurrency prices, market trends, API integration, and efficient data visualization",
+    description: "A mobile app offering cryptocurrency prices, market trends, API integration, and efficient data visualization",
     tags: [
-      {
-        name: "recycle-view",
-        color: "green-text-gradient",
-      },
-      {
-        name: "kotlin",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "crypto",
-        color: "pink-text-gradient",
-      },
+      { name: "recycle-view", color: "green-text-gradient" },
+      { name: "kotlin", color: "blue-text-gradient" },
+      { name: "crypto", color: "pink-text-gradient" },
     ],
     image: project20,
     source_code_link: "https://github.com/AlfeusMartinus",
@@ -335,21 +289,11 @@ const projects = [
   },
   {
     name: "CeritaMu",
-    description:
-      "A storytelling app allowing users to register, log in, upload, and share their personal stories",
+    description: "A storytelling app allowing users to register, log in, upload, and share their personal stories",
     tags: [
-      {
-        name: "maps",
-        color: "green-text-gradient",
-      },
-      {
-        name: "intent-camera",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "kotlin",
-        color: "pink-text-gradient",
-      },
+      { name: "maps", color: "green-text-gradient" },
+      { name: "intent-camera", color: "blue-text-gradient" },
+      { name: "kotlin", color: "pink-text-gradient" },
     ],
     image: project21,
     source_code_link: "https://github.com/AlfeusMartinus",
@@ -357,163 +301,22 @@ const projects = [
   },
   {
     name: "Envi-STEAM",
-    description:
-      "Envi-STEAM is a website that provides various interactive and engaging learning modules about environmental topics",
+    description: "A website that provides various interactive and engaging learning modules about environmental topics",
     tags: [
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "html", color: "green-text-gradient" },
+      { name: "js", color: "blue-text-gradient" },
+      { name: "css", color: "pink-text-gradient" },
     ],
     image: project1,
     source_code_link: "https://github.com/AlfeusMartinus/Envi-STEAM",
     demo_link: "https://envisteam.my.id/",
   },
   {
-    name: "Abon Burung",
-    description:
-      "Responsive Landing page website for UMKM Products Abon Cap Burung in Boyolali - Semarang",
-    tags: [
-      {
-        name: "wordpress",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "elementor",
-        color: "green-text-gradient",
-      },
-      {
-        name: "astra",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project2,
-    source_code_link: "https://abonburungofficialstore.com/",
-    demo_link: "https://abonburungofficialstore.com/",
-  },
-  {
-    name: "Movie Web",
-    description:
-      "Learn React by creating a movie web, using bootstrap and learn how to fetch data from TMDb API.",
-    tags: [
-      {
-        name: "jsx",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project3,
-    source_code_link: "https://github.com/AlfeusMartinus/movie-web",
-    demo_link: "https://github.com/AlfeusMartinus/movie-web",
-  },
-  {
-    name: "Single Page Porto",
-    description:
-      "Create a single page portofolio website using HTML, CSS, JavaScript and AOS (Animate On Scroll) Library",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project4,
-    source_code_link: "https://github.com/AlfeusMartinus/porto-web",
-    demo_link: "https://profile-set.netlify.app/",
-  },
-  {
-    name: "Quotes Site",
-    description:
-      "Random Quotes is a web that generates random quotes. This website is built using Node JS and uses the API from RapidApi.com",
-    tags: [
-      {
-        name: "nodejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project5,
-    source_code_link: "https://github.com/AlfeusMartinus/quotes-site",
-    demo_link: "https://quote-site.netlify.app/",
-  },
-  {
-    name: "Calculator",
-    description:
-      "A calculator website using JavaScript HTML CSS can perform basic mathematical operations",
-    tags: [
-      {
-        name: "js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project6,
-    source_code_link: "https://github.com/AlfeusMartinus/calculator-web",
-    demo_link: "https://lets-calculate-web.vercel.app",
-  },
-  {
-    name: "College Alfe.",
-    description:
-      "Blog Website for Attachment Work College build using CMS",
-    tags: [
-      {
-        name: "cms",
-        color: "green-text-gradient",
-      },
-      {
-        name: "webflow",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project16,
-    source_code_link: "https://alfeus-college-blog.webflow.io/",
-    demo_link: "https://alfeus-college-blog.webflow.io/",
-  },
-  {
     name: "Your Notes",
-    description:
-      "Web App Notes Create Use ReactJS and Build Tool Vite",
+    description: "Web App Notes Create Use ReactJS and Build Tool Vite with modern UI",
     tags: [
-      {
-        name: "ReactJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Vite",
-        color: "green-text-gradient",
-      },
+      { name: "ReactJS", color: "blue-text-gradient" },
+      { name: "Vite", color: "green-text-gradient" },
     ],
     image: project17,
     source_code_link: "https://github.com/AlfeusMartinus/Your-Notes",
@@ -521,17 +324,10 @@ const projects = [
   },
   {
     name: "Book Shelf Apps",
-    description:
-      "Submission of Data Management Applications Using DOM and Web Storage",
+    description: "Submission of Data Management Applications Using DOM and Web Storage",
     tags: [
-      {
-        name: "Native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "green-text-gradient",
-      },
+      { name: "Native", color: "blue-text-gradient" },
+      { name: "Javascript", color: "green-text-gradient" },
     ],
     image: project18,
     source_code_link: "https://github.com/AlfeusMartinus/bookshelf-apps",
@@ -539,28 +335,30 @@ const projects = [
   },
 ];
 
-const SocialMedia = [
+// ===== SOCIAL MEDIA =====
+export const SocialMedia = [
   {
     id: 1,
     icon: email,
-    navigate:
-      "mailto:feusmartinus@gmail.com?subject=Hai%20Alfeus%20Martinus%21%20Bisakah%20Saya%20Menghubungi%20Anda%3F",
+    navigate: "mailto:feusmartinus@gmail.com?subject=Hello%20Alfeus!",
+    label: "Email",
   },
   {
     id: 2,
     icon: githubb,
     navigate: "https://github.com/AlfeusMartinus",
+    label: "GitHub",
   },
   {
     id: 3,
     icon: linkedin,
     navigate: "https://www.linkedin.com/in/alfeusmartinus/",
+    label: "LinkedIn",
   },
   {
     id: 4,
     icon: instagram,
     navigate: "https://www.instagram.com/feusmrtns_/",
+    label: "Instagram",
   },
 ];
-
-export { services, technologies, experiences, myWords, projects, SocialMedia };
